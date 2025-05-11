@@ -1,4 +1,4 @@
-# Prototipo aplicación de monitoreo de presión arterial
+# Prototipo aplicación de registro de monitoreo de presión arterial
 Este es un prototipo de monitoreo de presión arterial creado por alumnos de FIME para la materia de Interacción Humano Computadora:
 
 - Israel Garza Chávez 2056576
