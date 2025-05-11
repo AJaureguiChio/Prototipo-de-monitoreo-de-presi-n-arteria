@@ -1,0 +1,27 @@
+/* Estilos personalizados (puedes agregar más si lo necesitas) */
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fa; /* Un fondo gris claro como en la imagen */
+}
+
+.btn-success {
+    background-color: #5cb85c; /* Verde similar al de la imagen */
+    border-color: #5cb85c;
+}
+
+.btn-success:hover {
+    background-color: #4cae4c;
+    border-color: #4cae4c;
+}
+
+.mt-4 {
+    top: 3rem;
+}
+
+h1, h2, h3 {
+    color: #333; /* Un color de texto oscuro */
+}
+
+h3{
+    font-weight: bolder;
+}

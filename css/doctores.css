@@ -1,0 +1,140 @@
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+h1 {
+    color: #38761d;
+    /* Verde oscuro como el título */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    padding: 8px;
+    outline: none;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    color: #555;
+}
+
+.doctors-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.doctor-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.doctor-item:last-child {
+    border-bottom: none;
+}
+
+.doctor-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.cita-button button {
+    background-color: transparent;
+    color: #1e88e5;
+    /* Azul para el enlace "Haz cita!" */
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.more-doctors {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.more-doctors button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.filters button {
+    background-color: white;
+    color: #555;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.doctor-item {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.doctor-info {
+    display: none;
+    position: relative;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    border: 1px solid #999;
+    padding: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-size: 14px;
+}
+
+.doctor-item.show-info .doctor-info {
+    display: block;
+}
