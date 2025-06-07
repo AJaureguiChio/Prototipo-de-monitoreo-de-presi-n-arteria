@@ -16,11 +16,11 @@ h1 {
 
 .search-bar {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    justify-content: center;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .search-bar input[type="text"] {
@@ -42,7 +42,7 @@ h1 {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.301);
     margin-bottom: 20px;
 }
 
@@ -131,10 +131,94 @@ h2 {
     border: 1px solid #999;
     padding: 10px;
     width: 80%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.411);
     font-size: 14px;
 }
 
 .doctor-item.show-info .doctor-info {
     display: block;
 }
+
+.search-bar {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.308);
+    margin-bottom: 30px;
+}
+
+#buscador {
+    width: 100%;
+    max-width: 800px; /* Ajusta este valor según necesites */
+}
+
+.search-container {
+    justify-content: center;
+}
+
+.search-label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.search-select {
+    height: 45px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    transition: all 0.3s;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+.search-select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    outline: none;
+}
+
+.btn-search {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    height: 45px;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-search:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.btn-search i {
+    margin-right: 8px;
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+    }
+    
+    .col-md-5, .col-md-2 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .col-md-2 {
+        margin-bottom: 0;
+    }
+    
+    .btn-search {
+        width: 100%;
+    }
+}
+
