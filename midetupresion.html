@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mide tu presión (Simulación)</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="css/midetupresion.css">
 </head>
+
 <body>
-    <div class="container mt-4">
+    <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <button class="btn btn-success mr-2">INICIO</button>
+                <li class="nav-item m-2">
+                    <button class="btn btn-success mr-2" disabled>INICIO</button>
                 </li>
-                <li class="nav-item">
-                    <a class="btn btn-success mr-2" href="/cita_dr.html">CITA DE Dr.</a>
+                <li class="nav-item m-2">
+                    <a class="btn btn-success mr-2" href="cita_dr.html">CITA DE Dr.</a>
                 </li>
-                <li class="nav-item">
-                    <button class="btn btn-success mr-2">HOSPITALES</button>
+                <li class="nav-item m-2">
+                    <a class="btn btn-success mr-2" href="hospitales.html">HOSPITALES</a>
                 </li>
-                <li class="nav-item">
-                    <button class="btn btn-success">REGISTRARSE</button>
+                <li class="nav-item m-2">
+                    <a class="btn btn-success" href="registro.html">REGISTRARSE</a>
                 </li>
             </ul>
         </nav>
@@ -42,11 +45,13 @@
                     <div class="form-row">
                         <div class="col">
                             <h3><span>Sistólica (máxima)</span></h3>
-                            <input type="number" class="form-control" id="sistolicaInput" placeholder="Sistólica (máxima)">
+                            <input type="number" class="form-control" id="sistolicaInput"
+                                placeholder="Sistólica (máxima)">
                         </div>
                         <div class="col">
                             <h3><span>Diastólica (mínima)</span></h3>
-                            <input type="number" class="form-control" id="diastolicaInput" placeholder="Diastólica (mínima)">
+                            <input type="number" class="form-control" id="diastolicaInput"
+                                placeholder="Diastólica (mínima)">
                         </div>
                     </div>
                 </div>
@@ -59,14 +64,104 @@
             <h2 id="resultadoPresion"></h2>
             <hr>
             <h3>DATOS ESPECÍFICOS</h3>
-            <p>La presión arterial es la fuerza de la sangre contra las paredes de las arterias y se mide en mmHg (milímetros de mercurio) con dos números: sistólica (máxima) y diastólica (mínima), siendo normal &lt;120/80</p>
+            <p>La presión arterial es la fuerza de la sangre contra las paredes de las arterias y se mide en mmHg
+                (milímetros de mercurio) con dos números: sistólica (máxima) y diastólica (mínima), siendo normal
+                &lt;120/80</p>
+            <img src="img/tabla-hipertension.jpg" alt="Tabla de Hiportensión">
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="Scripts/midetupresion.js"></script>
+        <hr>
+        <div class="mt-4">
+            <h1>🍏 Consejos para una Presión Arterial Saludable ❤️</h1>
+
+            <p>Mantener una presión arterial saludable es clave para prevenir enfermedades cardiovasculares, derrames
+                cerebrales y otros problemas de salud. Sigue estas recomendaciones:</p>
+
+            <div class="consejo">
+                <h2>🍎 1. Alimentación Saludable</h2>
+                <ul>
+                    <li><span class="emoji">🧂</span> <span class="destacado">Reduce el sodio:</span> Evita alimentos
+                        procesados, enlatados y comida rápida (máx. 1,500-2,300 mg de sal al día).</li>
+                    <li><span class="emoji">🥑</span> <span class="destacado">Aumenta el potasio:</span> Consume
+                        plátanos, espinacas, aguacates y frijoles.</li>
+                    <li><span class="emoji">🥗</span> <span class="destacado">Dieta DASH:</span> Prioriza frutas,
+                        verduras, granos enteros y proteínas magras.</li>
+                    <li><span class="emoji">🍷</span> <span class="destacado">Evita el exceso de alcohol:</span> Limita
+                        a 1 bebida al día (mujeres) o 2 (hombres).</li>
+                </ul>
+            </div>
+
+            <div class="consejo">
+                <h2>⚖️ 2. Control de Peso</h2>
+                <p>El sobrepeso aumenta la presión arterial. Perder incluso un 5-10% del peso corporal puede marcar una
+                    gran diferencia.</p>
+            </div>
+
+            <div class="consejo">
+                <h2>🏃‍♂️ 3. Ejercicio Regular</h2>
+                <ul>
+                    <li><span class="emoji">⏱️</span> <span class="destacado">30 minutos diarios</span> de actividad
+                        moderada (caminar, nadar, ciclismo).</li>
+                    <li><span class="emoji">💪</span> Incluye <span class="destacado">ejercicios de resistencia</span>
+                        2-3 veces por semana.</li>
+                </ul>
+            </div>
+
+            <div class="consejo">
+                <h2>🧘‍♀️ 4. Manejo del Estrés</h2>
+                <p>El estrés crónico eleva la presión arterial. Prueba técnicas como:</p>
+                <ul>
+                    <li><span class="emoji">🌬️</span> Meditación o respiración profunda</li>
+                    <li><span class="emoji">🧘</span> Yoga o tai chi</li>
+                    <li><span class="emoji">😴</span> Dormir 7-9 horas diarias</li>
+                </ul>
+            </div>
+
+            <div class="consejo">
+                <h2>🚭 5. Evita el Tabaco</h2>
+                <p>Fumar daña los vasos sanguíneos y sube la presión arterial. Dejar de fumar mejora la salud
+                    cardiovascular rápidamente.</p>
+            </div>
+
+            <div class="consejo">
+                <h2>🩺 6. Monitoreo Regular</h2>
+                <ul>
+                    <li><span class="emoji">🏠</span> Revisa tu presión arterial en casa si tienes riesgo de
+                        hipertensión.</li>
+                    <li><span class="emoji">📊</span> Valores ideales: <span class="destacado">Menos de 120/80
+                            mmHg</span>.</li>
+                </ul>
+            </div>
+
+            <div class="consejo">
+                <h2>☕ 7. Reduce la Cafeína</h2>
+                <p>En algunas personas, la cafeína eleva la presión. Si eres sensible, limita el café, té o
+                    energizantes.</p>
+            </div>
+
+            <div class="consejo">
+                <h2>💊 8. Medicación (si es necesaria)</h2>
+                <p>Si tu médico te receta medicamentos para la presión, tómalos según las indicaciones.</p>
+            </div>
+
+            <div class="extra">
+                <h2>🌿 Remedios Naturales (consultar con médico)</h2>
+                <p><span class="emoji">🧄</span> Ajo, <span class="emoji">🥤</span> jugo de remolacha, <span
+                        class="emoji">🍵</span> té de hibisco y <span class="emoji">🐟</span> omega-3 pueden tener
+                    efectos beneficiosos.</p>
+            </div>
+
+            <div class="footer">
+                <p>Pequeños cambios hacen una gran diferencia. Si tienes dudas o presión arterial alta persistente,
+                    consulta a un profesional de la salud. ¡Cuídate! 💙</p>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="Scripts/midetupresion.js"></script>
 </body>
+
 </html>

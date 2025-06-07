@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            margin-top: 50px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #38761d;
+            margin-bottom: 30px;
+        }
+        .btn-primary {
+            background-color: #38761d;
+            border-color: #38761d;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item m-2">
+                    <a class="btn btn-success mr-2" href="midetupresion.html">INICIO</a>
+                </li>
+                <li class="nav-item m-2">
+                    <a class="btn btn-success mr-2" href="cita_dr.html">CITA DE Dr.</a>
+                </li>
+                <li class="nav-item m-2">
+                    <a class="btn btn-success mr-2" href="hospitales.html">HOSPITALES</a>
+                </li>
+                <li class="nav-item m-2">
+                    <a class="btn btn-success" href="#">REGISTRARSE</a>
+                </li>
+            </ul>
+        </nav>
+    <div class="container">
+        <h2>Registro de Usuario</h2>
+        <form>
+            <div class="form-group mb-3">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ej. Juan Pérez" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" placeholder="10 dígitos" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" class="form-control" id="contrasena" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

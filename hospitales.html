@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitales</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        h1 {
+            color: #38761d;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .hospitales-list {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .hospital-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .hospital-item:last-child {
+            border-bottom: none;
+        }
+        .hospital-name {
+            font-weight: bold;
+            color: #333;
+        }
+        .more-hospitals {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .more-hospitals button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .filters {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 15px;
+        }
+        .filters select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item m-2">
+                    <a class="btn btn-success mr-2" href="midetupresion.html">INICIO</a>
+                </li>
+                <li class="nav-item m-2">
+                    <a class="btn btn-success mr-2" href="cita_dr.html">CITA DE Dr.</a>
+                </li>
+                <li class="nav-item m-2">
+                    <button class="btn btn-success mr-2" disabled>HOSPITALES</button>
+                </li>
+                <li class="nav-item m-2">
+                    <a class="btn btn-success" href="registro.html">REGISTRARSE</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h1>Encuentra un Hospital</h1>
+
+        <div class="hospitales-list">
+            <h2>Hospitales Cercanos</h2>
+            <div class="hospital-item">
+                <span class="hospital-name">Hospital General Monterrey</span>
+                <span><label>Av. Madero #123</label></span>
+            </div>
+            <div class="hospital-item">
+                <span class="hospital-name">Clínica San José</span>
+                <span><label>Calle Reforma #456</label></span>
+            </div>
+            <div class="hospital-item">
+                <span class="hospital-name">IMSS Unidad Médica Familiar 27</span>
+                <span><label>Col. Independencia</label></span>
+            </div>
+        </div>
+
+        <!-- <div class="more-hospitals">
+            <button>Ver más hospitales</button>
+        </div>
+
+        <div class="filters">
+            <span>Filtros</span>
+            <select>
+                <option>Todos</option>
+                <option>Privados</option>
+                <option>Públicos</option>
+            </select>
+        </div> -->
+    </div>
+</body>
+</html>

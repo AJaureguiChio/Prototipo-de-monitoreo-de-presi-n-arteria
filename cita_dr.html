@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cita de Dr.</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="css/doctores.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -14,16 +16,16 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="btn btn-success mr-2" href="/midetupresion.html">INICIO</a>
+                    <a class="btn btn-success mr-2" href="midetupresion.html">INICIO</a>
                 </li>
                 <li class="nav-item">
                     <button class="btn btn-success mr-2" disabled>CITA DE Dr.</button>
                 </li>
                 <li class="nav-item">
-                    <button class="btn btn-success mr-2">HOSPITALES</button>
+                    <a class="btn btn-success mr-2" href="hospitales.html">HOSPITALES</a>
                 </li>
                 <li class="nav-item">
-                    <button class="btn btn-success">REGISTRARSE</button>
+                    <a class="btn btn-success" href="registro.html">REGISTRARSE</a>
                 </li>
             </ul>
         </nav>
@@ -31,118 +33,53 @@
         <h1>Saca una cita con un Doctor!</h1>
 
         <div class="search-bar">
-            <button aria-label="Menú de búsqueda"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                </svg></button>
-            <input type="text" placeholder="Buscar">
-            <button aria-label="Buscar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path
-                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                </svg></button>
+            <form id="buscador">
+                <div class="row search-container">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label for="hospital" class="search-label">Hospital</label>
+                            <select class="form-control search-select" id="hospitales">
+                                <option value="">Seleccione un hospital</option>
+                                <option value="Hospital Ángeles Valle Oriente">Hospital Ángeles Valle Oriente</option>
+                                <option value="Doctors Hospital (Monterrey)">Doctors Hospital (Monterrey)</option>
+                                <option value="Hospitaria (Escobedo)">Hospitaria (Escobedo)</option>
+                                <option value="Christus Muguerza Hospital Cumbres (Monterrey)">Christus Muguerza Hospital Cumbres (Monterrey)</option>
+                                <option value="Hospital San Jorge">Hospital San Jorge</option>
+                                <option value="Hospital Hospitaria">Hospital Hospitaria</option>
+                                <option value="Centro Médico Monterrey">Centro Médico Monterrey</option>
+                                <option value="Centro de Atencion Integral Belisario Dominguez">Centro de Atencion Integral Belisario Dominguez</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label for="especialidad" class="search-label">Especialidad</label>
+                            <select class="form-control search-select" id="especialidad">
+                                <option value="">Seleccione una especialidad</option>
+                                <option value="Cardiología">Cardiología</option>
+                                <option value="Cardiología Clínica">Cardiología Clínica</option>
+                                <option value="Cardiología Intervensionista">Cardiología Intervensionista</option>
+                                <option value="Medico Cirujano">Medico Cirujano</option>
+                                <option value="Cardiología Internista">Cardiología Internista</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
 
         <div class="doctors-list">
             <h2>Dr. Populares:</h2>
-            <div class="doctor-item">
-                <span class="doctor-name">Dr. Diego Rentería </span>
-                <div class="doctor-info">
-                    <p><strong>Especialidad:</strong> Cardiología</p>
-                    <p><strong>Hospital:</strong> Hospital Ángeles Valle Oriente - Consultorio 1901 </p>
-                    <p><strong>Cédula Profesional:</strong> 7913453</p>
-                    <p><strong>Cédula Especial:</strong> 10993848</p>
-                    <p><strong>Teléfono:</strong> 81 4770 2448</p>
-                    <p><strong>WhatsApp:</strong> 81 3132 0037</p>
-                    <p><strong><a target="_blank" href="https://drdiegorenteria.com/?campaign=21644577510&content=711687809886&keyword=cardiologos&gad_source=1&gad_campaignid=21644577510&gclid=EAIaIQobChMIv8mHs4yajQMVFR9ECB0JcScDEAAYAiAAEgLocPD_BwE">Página Web</a></strong></p>
-                </div>
-                <span class="cita-button"><button class="info-toggle-btn">Haz cita!</button></span>
-            </div>
-            <div class="doctor-item">
-                <span class="doctor-name">Dr. Jorge A. Chavez de la Mora</span>
-                <div class="doctor-info">
-                    <p><strong>Especialidad:</strong> Cardiología Clínica e Intervensionista</p>
-                    <p><strong>Hospitales:</strong> Doctors Hospital (Monterrey), Hospitaria (Escobedo), Christus Muguerza Hospital Cumbres (Monterrey) </p>
-                    <p><strong>Cédula profesional:</strong> 8608688</p>
-                    <p><strong>Cédula Especial:</strong> 11663735</p>
-                    <p><strong>Teléfono:</strong> 81 4624 4282 </p>
-                    <p><strong>WhatsApp:</strong> 81 1608 0722 </p>
-                    <p><strong><a target="_blank" href="https://cardiologodrchavezdelamora.mx/?campaign=13041471733&content=520465117633&keyword=cardiologos&gad_source=1&gad_campaignid=13041471733&gclid=EAIaIQobChMIv8mHs4yajQMVFR9ECB0JcScDEAAYAyAAEgIXvPD_BwE">Página Web</a></strong></p>
-                </div>
-                <span class="cita-button"><button class="info-toggle-btn">Haz cita!</button></span>
-            </div>
-            <div class="doctor-item">
-                <span class="doctor-name">Dr. Elihú Hernández</span>
-                <div class="doctor-info">
-                    <p><strong>Especialidad:</strong> Medico Cirujano</p>
-                    <p><strong>Hospitales:</strong> Hospital Ángeles Valle Oriente | Hospital San Jorge | Hospital Hospitaria </p>
-                    <p><strong>Cédula profesional:</strong> 9499956 </p>
-                    <p><strong>Cédula Especial:</strong> 13000194 </p>
-                    <p><strong>Cédula Maestría:</strong> 13627932 </p>
-                    <p><strong>Telefono:</strong> 81 1414 3164 </p>
-                    <p><strong>WhatsApp</strong> 81 2010 6728</p>
-                    <p><strong><a target="_blank" href="https://www.drelihuhernandez.com/?gad_source=1&gad_campaignid=21369746395&gclid=EAIaIQobChMIx7mf-qaajQMV4ylECB2R-gAvEAAYAiAAEgLUCfD_BwE">Página Web</a></strong></p>
-                </div>
-                <span class="cita-button"><button class="info-toggle-btn">Haz cita!</button></span>
-            </div>
-            <div class="doctor-item">
-                <span class="doctor-name">Dr. Alan Javier De León Yáñez</span>
-                <div class="doctor-info">
-                    <p><strong>Especialidad:</strong> Cardiología Clínica</p>
-                    <p><strong>Hospitales:</strong> Centro Médico Monterrey  </p>
-                    <p><strong>Cédula profesional:</strong> 11204905 </p>
-                    <p><strong>Cédula Especial:</strong> 12280394 </p>
-                    <p><strong>Telefono:</strong> 81 4162 3620 </p>
-                    <p><strong>WhatsApp</strong> 81 8027 5254</p>
-                    <p><strong><a target="_blank" href="https://cardiologodralandeleon.com/?campaign=22000136845&content=617817000461&keyword=cardiologos%20monterrey&gad_source=1&gad_campaignid=22000136845&gclid=EAIaIQobChMIx7mf-qaajQMV4ylECB2R-gAvEAAYBCAAEgJJpvD_BwE">Página Web</a></strong></p>
-                </div>
-                <span class="cita-button"><button class="info-toggle-btn">Haz cita!</button></span>
-            </div>
-            <div class="doctor-item">
-                <span class="doctor-name">Dr. Felipe F. Garza García</span>
-                <div class="doctor-info">
-                    <p><strong>Especialidad:</strong> Cardiología Internista</p>
-                    <p><strong>Hospitales:</strong> Centro de Atencion Integral Belisario Dominguez </p>
-                    <p><strong>Cédulas profesional:</strong> 7998545 11009270 12148082 </p>
-                    <p><strong>Telefono:</strong> 81 8123 3329 </p>
-                    <p><strong><a target="_blank" href="https://www.doctoralia.com.mx/felipe-f-garza-garcia/cardiologo-internista/nuevo-leon?utm_medium=presencia360&utm_source=google&utm_campaign=SN-Spec-monterrey&utm_content=256960&prevent-patient-app-banner=true&gad_source=1&gad_campaignid=20581328596&gclid=EAIaIQobChMIx7mf-qaajQMV4ylECB2R-gAvEAAYAyAAEgIpb_D_BwE#about-section">Página Web</a></strong></p>
-                </div>
-                <span class="cita-button"><button class="info-toggle-btn">Haz cita!</button></span>
-            </div>
-            <div class="doctor-item">
-                <span class="doctor-name">Dr. Olivia Gomez</span>
-                <div class="doctor-info">
-                    <p><strong>Especialidad:</strong> Cardiología Clínica</p>
-                    <p><strong>Hospitales:</strong> Centro Médico Monterrey  </p>
-                    <p><strong>Cédula profesional:</strong> 11204905 </p>
-                    <p><strong>Cédula Especial:</strong> 12280394 </p>
-                    <p><strong>Telefono:</strong> 81 4162 3620 </p>
-                    <p><strong>WhatsApp</strong> 81 8027 5254</p>
-                    <p><strong><a target="_blank" href="https://cardiologodralandeleon.com/?campaign=22000136845&content=617817000461&keyword=cardiologos%20monterrey&gad_source=1&gad_campaignid=22000136845&gclid=EAIaIQobChMIx7mf-qaajQMV4ylECB2R-gAvEAAYBCAAEgJJpvD_BwE">Página Web</a></strong></p>
-                </div>
-                <span class="cita-button"><button class="info-toggle-btn">Haz cita!</button></span>
-            </div>
+            
         </div>
 
-        <div class="more-doctors">
-            <button>Buscar mas doctores</button>
-        </div>
-
-        <div class="filters">
-            <span>Filtros</span>
-            <select>
-                <option>Todos</option>
-                <option>Especialidad</option>
-                <option>Ubicación</option>
-            </select>
-        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="Scripts/doctores.js"></script>
+    <script src='Scripts/doctoresDB.js'></script>
 </body>
 
 </html>
